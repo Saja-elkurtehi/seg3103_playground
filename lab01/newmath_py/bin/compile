@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python -m py_compile $(find ./src -name '*.py')
