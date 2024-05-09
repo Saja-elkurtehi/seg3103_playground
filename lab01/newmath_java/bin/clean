@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Remove any class files from dist
+rm -f ./dist/*.class
