@@ -1,13 +1,25 @@
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+public class DateTest {
 
-class DateTest {
+    @Test
+    void testValidDate() {
+        Date date = new Date(2023, 5, 23);
+        assertNotNull(date);
+    }
 
-  @Test
-  void nextDate_sample() {
-    Date d = new Date(2020,5,3);
-    assertEquals(new Date(2020,5,4), d.nextDate());
-  }
+    @Test
+    void testInvalidDate() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Date(2023, 2, 30);
+        });
+    }
 
+    @Test
+    void testNextDate() {
+        Date date = new Date(2023, 5, 23);
+        Date nextDate = date.nextDate();
+        assertEquals(new Date(2023, 5, 24), nextDate);
+    }
 }
