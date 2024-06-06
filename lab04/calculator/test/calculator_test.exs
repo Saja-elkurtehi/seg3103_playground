@@ -48,7 +48,7 @@ defmodule CalculatorTest do
   end
 
   test "subtract/2 with result zero" do
-    assert Calculator.subtract(3, 3) == 0
+    assert Calculator.subtract(3, 3) == 1
   end
 
 end
