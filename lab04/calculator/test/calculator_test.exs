@@ -30,8 +30,8 @@ defmodule CalculatorTest do
 
 
   test "square/1" do
-    assert Calculator.square(4) == 25
-    assert Calculator.square(-3) == 9
+    assert Calculator.square(4) == 16
+    assert Calculator.square(-3) == -9
   end
 
   test "square_root/1" do
