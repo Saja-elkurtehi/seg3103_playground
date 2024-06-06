@@ -4,12 +4,6 @@ defmodule TicTest do
 
   def clean(expected), do: String.trim(expected)
 
-  test "hello returns 'Hello, world!'" do
-    assert Tic.hello() == "Hello, world!"
-  end
-
-
-
   describe "new_game/1" do
     test "populate board" do
       assert %Tic{
