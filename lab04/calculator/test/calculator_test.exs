@@ -18,12 +18,19 @@ defmodule CalculatorTest do
     assert Calculator.divide(6, 3) == 2
   end
 
+
   test "divide/2 returns error for division by zero" do
     assert Calculator.divide(5, 0) == {:error, "Division by zero"}
   end
 
+
+
+
+
+
+
   test "square/1" do
-    assert Calculator.square(4) == 16
+    assert Calculator.square(4) == 25
     assert Calculator.square(-3) == 9
   end
 
