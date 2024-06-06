@@ -44,7 +44,7 @@ defmodule CalculatorTest do
   end
 
   test "add/2 with negative numbers" do
-    assert Calculator.add(-1, -2) == 3
+    assert Calculator.add(-1, -2) == -3
   end
 
   test "subtract/2 with result zero" do
