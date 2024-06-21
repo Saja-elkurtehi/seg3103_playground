@@ -1,6 +1,6 @@
 defmodule GradesWeb.PageLive do
   use GradesWeb, :live_view
-  alias Grades.Calculator
+  alias Grades.GradesCalculatorStub
 
   @impl true
   def mount(_params, _session, socket) do
@@ -20,9 +20,9 @@ defmodule GradesWeb.PageLive do
 
     socket
     |> assign(:grades, grades)
-    |> assign(:letter_grade, Calculator.letter_grade(grades))
-    |> assign(:percentage_grade, Calculator.percentage_grade(grades))
-    |> assign(:numeric_grade, Calculator.numeric_grade(grades))
+    |> assign(:letter_grade, GradesCalculatorStub.letter_grade(grades))
+    |> assign(:percentage_grade, GradesCalculatorStub.percentage_grade(grades))
+    |> assign(:numeric_grade, GradesCalculatorStub.numeric_grade(grades))
     |> my_reply(:noreply)
   end
 
