@@ -16,3 +16,5 @@ public void testSearchButtonPresence() {
 }
 Name: Saja Elkurtehi
 Student Number: 300288667
+assets: https://github.com/Saja-elkurtehi/seg3103_playground/tree/main/lab06/assets
+
