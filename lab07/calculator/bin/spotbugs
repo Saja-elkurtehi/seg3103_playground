@@ -1,5 +1,0 @@
-#!/bin/bash
-
-./bin/compile
-
-java -jar ./lib/spotbugs/lib/spotbugs.jar
