@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.3.0" sequence="0" timestamp="1626310706720" analysisTimestamp="1626310812664" release="">
+  <Project projectName="Calculator">
+    <Jar>/Users/aforward/sin/courses/_/seg3x03_internal/lab07_template/calculator/dist</Jar>
+    <AuxClasspathEntry>/Users/aforward/sin/courses/_/seg3x03_internal/lab07_template/calculator/lib/junit-platform-console-standalone-1.7.1.jar</AuxClasspathEntry>
+    <SrcDir>/Users/aforward/sin/courses/_/seg3x03_internal/lab07_template/calculator/src</SrcDir>
+    <SrcDir>/Users/aforward/sin/courses/_/seg3x03_internal/lab07_template/calculator/test</SrcDir>
+    <WrkDir>/Users/aforward/sin/courses/_/seg3x03_internal/lab07_template/calculator/bin</WrkDir>
+  </Project>
+  <BugInstance type="DB_DUPLICATE_BRANCHES" priority="2" rank="17" abbrev="DB" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="815" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <SourceLine classname="CalCFrame" start="81" end="81" startBytecode="443" endBytecode="457" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    <SourceLine classname="CalCFrame" start="83" end="83" startBytecode="460" endBytecode="473" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="processNumbers" signature="()V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="265" end="319" startBytecode="0" endBytecode="433" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="doubleValue" signature="()D" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Double" start="842" end="842" startBytecode="0" endBytecode="46" sourcefile="Double.java" sourcepath="java/lang/Double.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="parseDouble" signature="(Ljava/lang/String;)J" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="CalCFrame" start="272" end="272" startBytecode="38" endBytecode="38" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    <SourceLine classname="CalCFrame" start="289" end="289" startBytecode="117" endBytecode="117" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="CalCFrame" start="313" end="313" startBytecode="230" endBytecode="230" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="showAnswer" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="360" end="366" startBytecode="0" endBytecode="90" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="doubleValue" signature="()D" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Double" start="842" end="842" startBytecode="0" endBytecode="46" sourcefile="Double.java" sourcepath="java/lang/Double.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="parseDouble" signature="(Ljava/lang/String;)J" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="CalCFrame" start="360" end="360" startBytecode="4" endBytecode="4" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="clickCheck" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="CalCFrame" start="373" end="378" startBytecode="0" endBytecode="12" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="140" end="4645" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="?" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="CalCFrame" start="373" end="373" startBytecode="3" endBytecode="3" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="calculate" signature="(IDD)D" isStatic="false">
+      <SourceLine classname="CalCFrame" start="327" end="350" startBytecode="0" endBytecode="193" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <SourceLine classname="CalCFrame" start="329" end="346" startBytecode="4" endBytecode="96" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="CalCFrame$1" role="CLASS_ANONYMOUS">
+      <SourceLine classname="CalCFrame$1" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="815" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <SourceLine classname="CalCFrame" start="53" end="53" startBytecode="234" endBytecode="234" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="ADD" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="169" endBytecode="169" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="DIVI" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="184" endBytecode="184" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="MULT" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="179" endBytecode="179" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="POW" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="189" endBytecode="189" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="SQRT" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="195" endBytecode="195" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Field classname="CalCFrame" name="SUB" signature="I" isStatic="false">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Field>
+    <SourceLine classname="CalCFrame" start="37" end="37" startBytecode="174" endBytecode="174" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="2" rank="16" abbrev="UC" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="815" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <String value="local$2 &gt;= 13"/>
+    <SourceLine classname="CalCFrame" start="80" end="80" startBytecode="434" endBytecode="434" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="2" rank="16" abbrev="UC" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="815" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <String value="local$2 &gt;= 3"/>
+    <SourceLine classname="CalCFrame" start="76" end="76" startBytecode="376" endBytecode="376" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="2" rank="16" abbrev="UC" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="815" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <String value="local$2 &gt;= 8"/>
+    <SourceLine classname="CalCFrame" start="78" end="78" startBytecode="405" endBytecode="405" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="processNumbers" signature="()V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="265" end="319" startBytecode="0" endBytecode="433" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <String value="this.morenums == true"/>
+    <SourceLine classname="CalCFrame" start="304" end="304" startBytecode="194" endBytecode="194" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="CalcFrameTest">
+      <SourceLine classname="CalcFrameTest" sourcefile="CalCFrameTest.java" sourcepath="CalCFrameTest.java"/>
+    </Class>
+    <Method classname="CalcFrameTest" name="setClearscreen" signature="(LCalCFrame;Z)V" isStatic="false">
+      <SourceLine classname="CalcFrameTest" start="16" end="32" startBytecode="0" endBytecode="194" sourcefile="CalCFrameTest.java" sourcepath="CalCFrameTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SW_SWING_METHODS_INVOKED_IN_SWING_THREAD" priority="3" rank="19" abbrev="SW" category="BAD_PRACTICE">
+    <Class classname="Main">
+      <SourceLine classname="Main" sourcefile="Main.java" sourcepath="Main.java"/>
+    </Class>
+    <Method classname="Main" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Main" start="12" end="16" startBytecode="0" endBytecode="61" sourcefile="Main.java" sourcepath="Main.java"/>
+    </Method>
+    <SourceLine classname="Main" start="15" end="15" startBytecode="22" endBytecode="22" sourcefile="Main.java" sourcepath="Main.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.junit.jupiter.api.Assertions</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Wed, 14 Jul 2021 20:58:26 -0400" total_classes="4" referenced_classes="295" total_bugs="18" total_size="272" num_packages="1" java_version="17" vm_version="17+0" cpu_seconds="11.37" clock_seconds="48.21" peak_mbytes="157.77" alloc_mbytes="4096.00" gc_seconds="0.02" priority_3="4" priority_2="11" priority_1="3">
+    <PackageStats package="" total_bugs="18" total_types="4" total_size="272" priority_3="4" priority_2="11" priority_1="3">
+      <ClassStats class="CalCFrame" sourceFile="CalCFrame.java" interface="false" size="237" bugs="16" priority_3="2" priority_2="11" priority_1="3"/>
+      <ClassStats class="CalCFrame$1" sourceFile="CalCFrame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="CalcFrameTest" sourceFile="CalCFrameTest.java" interface="false" size="20" bugs="1" priority_3="1"/>
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="8" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="40" invocations="1" avgMicrosecondsPerInvocation="40517" maxMicrosecondsPerInvocation="40517" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
