@@ -22,8 +22,7 @@ Ensure the `pom.xml` includes the following dependencies for JMH:
 
 Screenshot of Terminal Output
 
-[
-](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/BenchmarkResults.txt)
+https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/BenchmarkResults.txt
 Modified Code
 
 Calculator.java
