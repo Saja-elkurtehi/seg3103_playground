@@ -19,7 +19,6 @@ Ensure the `pom.xml` includes the following dependencies for JMH:
     </dependency>
 </dependencies>
 
-
 Screenshot of Terminal Output
 Terminal Output
 
