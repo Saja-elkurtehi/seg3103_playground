@@ -28,9 +28,16 @@ Modified Code
 
 Calculator.java
 
-
+[
+](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/1.png)
 
 CalculatorBenchmark.java
 
+[
+](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/2.png)
+[
+](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/3.png)
 
 BenchmarkRunner.java
+[
+](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/4.png)
