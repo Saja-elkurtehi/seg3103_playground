@@ -1,0 +1,136 @@
+/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51104:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/rt.jar:/Users/sajaelkurtehi/Summer2024/SEG3103/Labs/seg3103_playground/lab09/micro_benchmark/target/classes:/Users/sajaelkurtehi/.m2/repository/org/openjdk/jmh/jmh-core/1.33/jmh-core-1.33.jar:/Users/sajaelkurtehi/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/sajaelkurtehi/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/sajaelkurtehi/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.33/jmh-generator-annprocess-1.33.jar com.example.benchmark.BenchmarkRunner
+# JMH version: 1.33
+# VM version: JDK 1.8.0_371, Java HotSpot(TM) 64-Bit Server VM, 25.371-b11
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51104:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.benchmark.CalculatorBenchmark.benchmarkAdd
+
+# Run progress: 0.00% complete, ETA 00:06:40
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁶ ms/op
+Iteration   1: ≈ 10⁻⁶ ms/op
+Iteration   2: ≈ 10⁻⁶ ms/op
+Iteration   3: ≈ 10⁻⁶ ms/op
+Iteration   4: ≈ 10⁻⁶ ms/op
+Iteration   5: ≈ 10⁻⁶ ms/op
+
+
+Result "com.example.benchmark.CalculatorBenchmark.benchmarkAdd":
+  ≈ 10⁻⁶ ms/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_371, Java HotSpot(TM) 64-Bit Server VM, 25.371-b11
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51104:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.benchmark.CalculatorBenchmark.benchmarkDivide
+
+# Run progress: 25.00% complete, ETA 00:05:03
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁶ ms/op
+Iteration   1: ≈ 10⁻⁶ ms/op
+Iteration   2: ≈ 10⁻⁶ ms/op
+Iteration   3: ≈ 10⁻⁶ ms/op
+Iteration   4: ≈ 10⁻⁶ ms/op
+Iteration   5: ≈ 10⁻⁶ ms/op
+
+
+Result "com.example.benchmark.CalculatorBenchmark.benchmarkDivide":
+  ≈ 10⁻⁶ ms/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_371, Java HotSpot(TM) 64-Bit Server VM, 25.371-b11
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51104:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.benchmark.CalculatorBenchmark.benchmarkMultiply
+
+# Run progress: 50.00% complete, ETA 00:03:22
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁶ ms/op
+Iteration   1: ≈ 10⁻⁶ ms/op
+Iteration   2: ≈ 10⁻⁶ ms/op
+Iteration   3: ≈ 10⁻⁶ ms/op
+Iteration   4: ≈ 10⁻⁶ ms/op
+Iteration   5: ≈ 10⁻⁶ ms/op
+
+
+Result "com.example.benchmark.CalculatorBenchmark.benchmarkMultiply":
+  ≈ 10⁻⁶ ms/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_371, Java HotSpot(TM) 64-Bit Server VM, 25.371-b11
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51104:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.benchmark.CalculatorBenchmark.benchmarkSubtract
+
+# Run progress: 75.00% complete, ETA 00:01:41
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁵ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁶ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁶ ms/op
+Iteration   1: ≈ 10⁻⁶ ms/op
+Iteration   2: ≈ 10⁻⁶ ms/op
+Iteration   3: ≈ 10⁻⁶ ms/op
+Iteration   4: ≈ 10⁻⁶ ms/op
+Iteration   5: ≈ 10⁻⁶ ms/op
+
+
+Result "com.example.benchmark.CalculatorBenchmark.benchmarkSubtract":
+  ≈ 10⁻⁶ ms/op
+
+
+# Run complete. Total time: 00:06:47
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                              Mode  Cnt   Score    Error  Units
+CalculatorBenchmark.benchmarkAdd       avgt    5  ≈ 10⁻⁶           ms/op
+CalculatorBenchmark.benchmarkDivide    avgt    5  ≈ 10⁻⁶           ms/op
+CalculatorBenchmark.benchmarkMultiply  avgt    5  ≈ 10⁻⁶           ms/op
+CalculatorBenchmark.benchmarkSubtract  avgt    5  ≈ 10⁻⁶           ms/op
+
+Process finished with exit code 0

@@ -1,0 +1,8 @@
+JMH S 23 TestDemo.SplitBenchmark S 58 TestDemo.jmh_generated.SplitBenchmark_benchMarkOne_jmhTest S 12 benchMarkOne S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 5 T 3 1 s E I 1 2 E E E E E E E E E 
+JMH S 23 TestDemo.SplitBenchmark S 58 TestDemo.jmh_generated.SplitBenchmark_benchMarkTwo_jmhTest S 12 benchMarkTwo S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 5 T 3 1 s E I 1 2 E E E E E E E E E 
+JMH S 18 TestDemo.JMHSample S 65 TestDemo.jmh_generated.JMHSample_concatUsingStringBuilder_jmhTest S 24 concatUsingStringBuilder S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 18 TestDemo.JMHSample S 53 TestDemo.jmh_generated.JMHSample_stringConcat_jmhTest S 12 stringConcat S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 41 com.example.benchmark.CalculatorBenchmark S 76 com.example.benchmark.jmh_generated.CalculatorBenchmark_benchmarkAdd_jmhTest S 12 benchmarkAdd S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 41 com.example.benchmark.CalculatorBenchmark S 79 com.example.benchmark.jmh_generated.CalculatorBenchmark_benchmarkDivide_jmhTest S 15 benchmarkDivide S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 41 com.example.benchmark.CalculatorBenchmark S 81 com.example.benchmark.jmh_generated.CalculatorBenchmark_benchmarkMultiply_jmhTest S 17 benchmarkMultiply S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 41 com.example.benchmark.CalculatorBenchmark S 81 com.example.benchmark.jmh_generated.CalculatorBenchmark_benchmarkSubtract_jmhTest S 17 benchmarkSubtract S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
