@@ -20,7 +20,7 @@ Ensure the `pom.xml` includes the following dependencies for JMH:
 </dependencies>
 
 Screenshot of Terminal Output
-Terminal Output
+[Terminal Output](https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab09/assets/BenchmarkResults.txt)
 
 Description: This screenshot shows the terminal output after running the JMH benchmarks, displaying the performance metrics for each calculator method.
 Modified Code
