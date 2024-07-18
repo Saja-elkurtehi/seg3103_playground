@@ -1,0 +1,6 @@
+mvn org.pitest:pitest-maven:mutationCoverage
+
+<mutators>
+  <mutator>DEFAULTS</mutator>
+  <mutator>EXPERIMENTAL_MEMBER_VARIABLE</mutator>
+</mutators>
