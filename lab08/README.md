@@ -5,8 +5,11 @@ Saja Elkurtehi
 Screenshots
 
 Starting the PITest Plugin
+https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab08/assets/1.png 
 
 HTML Report Screenshots
+https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab08/assets/2.png
+https://github.com/Saja-elkurtehi/seg3103_playground/blob/main/lab08/assets/3.png
 
 
 Mutation Explanations
